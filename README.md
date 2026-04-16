@@ -8,8 +8,8 @@
 
 **Team Name:** Minion++
 
-* Nisha
-* (Partner Name)
+* Nikath Jahan
+* Nisha S
 
 ---
 
