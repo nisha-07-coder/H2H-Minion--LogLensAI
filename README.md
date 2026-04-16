@@ -4,15 +4,6 @@
 
 ---
 
-## 👥 Team
-
-**Team Name:** Minion++
-
-* Nikath Jahan
-* Nisha S
-
----
-
 ## ❗ Problem
 
 Network logs are generated continuously in systems, but they are difficult to understand.
@@ -120,21 +111,23 @@ System suggests next steps:
 
 ---
 
-## ⚙️ How It Works
+## ⚙️ How It Works  
 
-Raw Logs
-↓
-Log Parsing
-↓
-Pattern Detection & Analysis
-↓
-Incident Formation
-↓
-Classification
-↓
-Insight Generation
-↓
-User-Friendly Output
+Raw Logs  
+   ↓  
+Log Parsing  
+   ↓  
+Structured Data  
+   ↓  
+Pattern Detection & Analysis  
+   ↓  
+Incident Formation  
+   ↓  
+Classification (Critical / Warning / Info)  
+   ↓  
+Insight Generation  
+   ↓  
+User-Friendly Output (Dashboard)  
 
 ---
 
@@ -142,10 +135,10 @@ User-Friendly Output
 
 ### Input Logs:
 
-Login failed
-Login failed
-Login failed
-Port scan detected
+-Login failed
+-Login failed
+-Login failed
+-Port scan detected
 
 ### Output:
 
@@ -172,15 +165,28 @@ From minutes → to seconds
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structure  
 
 H2H-Minion-LogLensAI/
 
-* data/ → sample logs
-* src/ → parser, analysis, logic
-* ui/ → Streamlit app
-* docs/ → diagrams
-* README.md
+├── data/
+│   └── sample_logs.txt
+│
+├── src/
+│   ├── parser.py
+│   ├── classifier.py
+│   ├── anomaly.py
+│   ├── incident.py
+│   └── translator.py
+│
+├── ui/
+│   └── app.py
+│
+├── docs/
+│   └── architecture.png
+│
+├── requirements.txt
+└── README.md
 
 ---
 
@@ -196,6 +202,14 @@ Day 1 — Problem understanding and system design
 * Chat-based interaction (“Explain this log”)
 * Integration with security tools
 * Advanced attack detection
+
+---
+## 👥 Team
+
+**Team Name:** Minion++
+
+* Nikath Jahan
+* Nisha S
 
 ---
 
