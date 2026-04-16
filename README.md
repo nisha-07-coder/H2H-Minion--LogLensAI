@@ -8,8 +8,8 @@
 
 **Team Name:** Minion++
 
-* Nikath Jahan
-* Nisha S
+* Nisha
+* (Partner Name)
 
 ---
 
@@ -32,7 +32,7 @@ This leads to delayed detection of security threats and slower incident response
 
 ## 💡 Our Idea
 
-Instead of just translating logs, we build a system that **acts like a network analyst**.
+Instead of building just a log translator, we designed a system that **acts like a network analyst**.
 
 LogLens AI:
 
@@ -43,38 +43,80 @@ LogLens AI:
 
 ---
 
-## 🧠 What Makes Our Solution Different
+## 🧠 Core Capabilities (Aligned with Problem Statement)
 
-### 🔗 Event-Based Thinking
+### 🔍 Log Parsing
 
-We do not treat logs individually.
-We group multiple logs into meaningful **incidents**.
+Extracts structured information such as source IP, destination, port, and action from raw logs (Syslog, SNMP, VPC Flow Logs).
 
 ---
 
-### 🧩 Pattern Detection
+### 🚨 Anomaly Detection
 
-We identify patterns such as:
+Identifies unusual patterns such as:
 
 * Repeated login failures
-* Port scanning
+* Port scanning activity
 * Sudden traffic spikes
 
 ---
 
-### 🧠 Human-Like Explanation
+### ⚠️ Log Categorization
 
-Instead of technical output, we generate simple insights:
+Each event is classified as:
 
-“Multiple failed login attempts detected. This may indicate a brute-force attack.”
+* 🔴 **Critical** — attacks or security threats
+* 🟡 **Warning** — suspicious or unusual behavior
+* 🟢 **Informational** — normal activity
 
 ---
 
-### 💡 Action Suggestions
+### 🧠 Natural Language Output
 
-We guide the user with next steps:
+Converts technical logs into simple, human-readable insights:
 
-“Recommended: Block the IP or restrict SSH access.”
+> “Multiple failed SSH login attempts detected. This may indicate a brute-force attack.”
+
+---
+
+### ⏱️ Time-to-Clarity Metric
+
+Traditional analysis:
+
+* Requires reading multiple logs manually
+* Takes minutes to understand an issue
+
+With LogLens AI:
+
+* Logs are instantly translated into insights
+* Time reduced from minutes → seconds
+
+Example:
+
+* Without tool: ~2–3 minutes
+* With LogLens AI: < 10 seconds
+
+---
+
+## 🔥 What Makes Our Solution Different
+
+### 🔗 Event-Based Thinking
+
+Logs are grouped into meaningful **incidents** instead of being analyzed individually.
+
+---
+
+### 🧩 Pattern Detection & Correlation
+
+Multiple logs are connected to detect coordinated behavior.
+
+---
+
+### 💡 Actionable Recommendations
+
+System suggests next steps:
+
+> “Recommended: Block the IP or restrict SSH access.”
 
 ---
 
@@ -82,11 +124,13 @@ We guide the user with next steps:
 
 Raw Logs
 ↓
-Log Parsing (extract important fields)
+Log Parsing
 ↓
 Pattern Detection & Analysis
 ↓
-Incident Formation (group related logs)
+Incident Formation
+↓
+Classification
 ↓
 Insight Generation
 ↓
@@ -122,9 +166,9 @@ From minutes → to seconds
 * Python
 * Regex (log parsing)
 * Pandas (data handling)
-* Rule-based logic (pattern detection
-* AI for explanation 
-* Streamlit (simple UI)
+* Rule-based logic (pattern detection)
+* AI for explanation
+* Streamlit (UI)
 
 ---
 
@@ -142,7 +186,7 @@ H2H-Minion-LogLensAI/
 
 ## 🚧 Current Status
 
-Day 1 — Problem understanding and project design
+Day 1 — Problem understanding and system design
 
 ---
 
@@ -154,3 +198,4 @@ Day 1 — Problem understanding and project design
 * Advanced attack detection
 
 ---
+
