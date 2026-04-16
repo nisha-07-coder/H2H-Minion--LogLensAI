@@ -9,4 +9,6 @@ LogLens AI is an intelligent system that converts complex network logs (Syslog, 
 The goal is to reduce the time required to understand network incidents by providing clear explanations, detecting anomalies, and identifying potential security threats.
 ## Team Members :
 Nikath Jahan and Nisha S
+
+
 **Day 1 — Added detailed README with project overview**
