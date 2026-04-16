@@ -134,11 +134,12 @@ User-Friendly Output (Dashboard)
 ## 🔍 Example
 
 ### Input Logs:
-
+'''
 -Login failed
 -Login failed
 -Login failed
 -Port scan detected
+'''
 
 ### Output:
 
@@ -167,6 +168,7 @@ From minutes → to seconds
 
 ## 📂 Project Structure  
 
+```
 H2H-Minion-LogLensAI/
 
 ├── data/
@@ -186,8 +188,8 @@ H2H-Minion-LogLensAI/
 │   └── architecture.png
 │
 ├── requirements.txt
-└── README.md---
-
+└── README.md
+```
 ## 🚧 Current Status
 
 Day 1 — Problem understanding and system design
