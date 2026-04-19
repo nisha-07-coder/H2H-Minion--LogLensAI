@@ -4,207 +4,223 @@
 
 ---
 
-## ❗ Problem
+## 📌 Overview
 
-Network logs are generated continuously in systems, but they are difficult to understand.
+**LogLens AI** is an AI-powered cybersecurity tool that transforms raw network logs into **human-readable insights, correlated incidents, and actionable recommendations**.
 
-Example:
-SRC=192.168.1.10 PORT=22 ACTION=DENY
-
-Such logs are:
-
-* Hard to interpret
-* Time-consuming to analyze
-* Difficult for beginners and even tiring for experts
-
-This leads to delayed detection of security threats and slower incident response.
+It helps reduce incident response time by converting complex logs into **clear security intelligence**.
 
 ---
 
-## 💡 Our Idea
+## 🎯 Problem Statement
 
-Instead of building just a log translator, we designed a system that **acts like a network analyst**.
+Modern systems generate massive volumes of logs that are:
 
-LogLens AI:
+* ❌ Difficult to understand
+* ⏳ Time-consuming to analyze
+* 🧠 Hard for beginners and tiring for experts
 
-* Understands logs
-* Connects related events
-* Explains what is happening
-* Suggests what action to take
+➡️ Result: **Delayed threat detection and slow incident response**
 
 ---
 
-## 🧠 Core Capabilities (Aligned with Problem Statement)
+## 💡 Solution
+
+LogLens AI acts like a **virtual SOC analyst** by:
+
+* 🔍 Parsing raw logs into structured data
+* 🚨 Detecting anomalies (brute force, port scan)
+* 🏷️ Classifying severity levels
+* 🔗 Correlating events into incidents
+* 🧠 Generating AI-based explanations
+* 💡 Providing actionable recommendations
+
+---
+
+## 🧱 Architecture
+
+```
+Raw Logs
+   ↓
+Log Parsing (Regex)
+   ↓
+Structured Data (JSON)
+   ↓
+Anomaly Detection
+   ↓
+Log Classification
+   ↓
+Incident Correlation
+   ↓
+AI Explanation Engine
+   ↓
+Dashboard Output (Streamlit)
+```
+
+---
+
+## 🔥 Features
 
 ### 🔍 Log Parsing
 
-Extracts structured information such as source IP, destination, port, and action from raw logs (Syslog, SNMP, VPC Flow Logs).
+* Extracts:
+
+  * Source IP
+  * Port
+  * Action
+  * Timestamp
 
 ---
 
 ### 🚨 Anomaly Detection
 
-Identifies unusual patterns such as:
+Detects:
 
-* Repeated login failures
-* Port scanning activity
-* Sudden traffic spikes
-
----
-
-### ⚠️ Log Categorization
-
-Each event is classified as:
-
-* 🔴 **Critical** — attacks or security threats
-* 🟡 **Warning** — suspicious or unusual behavior
-* 🟢 **Informational** — normal activity
+* Brute-force attacks
+* Port scanning
+* Suspicious patterns
 
 ---
 
-### 🧠 Natural Language Output
+### 🔗 Incident Correlation
 
-Converts technical logs into simple, human-readable insights:
-
-> “Multiple failed SSH login attempts detected. This may indicate a brute-force attack.”
-
----
-
-### ⏱️ Time-to-Clarity Metric
-
-Traditional analysis:
-
-* Requires reading multiple logs manually
-* Takes minutes to understand an issue
-
-With LogLens AI:
-
-* Logs are instantly translated into insights
-* Time reduced from minutes → seconds
+Combines multiple logs into **attack stories**
 
 Example:
 
-* Without tool: ~2–3 minutes
-* With LogLens AI: < 10 seconds
+> Multiple failed logins + multiple ports accessed → Coordinated attack
 
 ---
 
-## 🔥 What Makes Our Solution Different
+### 🧠 AI Insights
 
-### 🔗 Event-Based Thinking
+Example output:
 
-Logs are grouped into meaningful **incidents** instead of being analyzed individually.
-
----
-
-### 🧩 Pattern Detection & Correlation
-
-Multiple logs are connected to detect coordinated behavior.
+> “Multiple failed SSH login attempts followed by port scanning indicate a potential brute-force attack.”
 
 ---
 
-### 💡 Actionable Recommendations
+### 💡 Recommendations
 
-System suggests next steps:
-
-> “Recommended: Block the IP or restrict SSH access.”
-
----
-
-## ⚙️ How It Works  
-
-Raw Logs  
-   ↓  
-Log Parsing  
-   ↓  
-Structured Data  
-   ↓  
-Pattern Detection & Analysis  
-   ↓  
-Incident Formation  
-   ↓  
-Classification (Critical / Warning / Info)  
-   ↓  
-Insight Generation  
-   ↓  
-User-Friendly Output (Dashboard)  
+* Block malicious IP
+* Restrict access
+* Enable firewall rules
 
 ---
 
-## 🔍 Example
+### 📊 Dashboard
 
-## Input Logs:
-
--Login failed
-
--Login failed
-
--Login failed
-
--Port scan detected
-
-
-### Output:
-
-“Suspicious activity detected. Repeated login failures followed by a port scan may indicate a potential attack.”
+* Real-time metrics
+* Charts (port usage, severity)
+* Visual alerts
+* Structured logs
 
 ---
 
-## 🎯 Goal
 
-To reduce the **time between seeing a log and understanding what to do**
+## ⚙️ Tech Stack
 
-From minutes → to seconds
-
----
-
-## 🛠️ Tech Stack
-
-* Python
-* Regex (log parsing)
-* Pandas (data handling)
-* Rule-based logic (pattern detection)
-* AI for explanation
-* Streamlit (UI)
+* 🐍 Python
+* 📊 Pandas
+* 🔍 Regex
+* 🤖 LLM (AI explanations)
+* 🌐 Streamlit (UI Dashboard)
+* 🧠 Scikit-learn (optional ML)
 
 ---
 
-## 📂 Project Structure  
+## 📂 Project Structure
 
 ```
 H2H-Minion-LogLensAI/
 
-├── data/
+├── Data/
 │   └── sample_logs.txt
 │
 ├── src/
+│   ├── app.py
 │   ├── parser.py
 │   ├── classifier.py
 │   ├── anomaly.py
 │   ├── incident.py
-│   └── translator.py
-│
-├── ui/
-│   └── app.py
-│
-├── docs/
-│   └── architecture.png
+│   ├── explainer.py
+│   └── ip_intelligence.py
 │
 ├── requirements.txt
 └── README.md
 ```
-## 🚧 Current Status
 
-Day 1 — Problem understanding and system design
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/your-username/H2H-Minion-LogLensAI.git
+cd H2H-Minion-LogLensAI
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the App
+
+```bash
+cd src
+streamlit run app.py
+```
+
+---
+
+## 📊 Example Output
+
+```json
+{
+  "source_ip": "192.168.1.10",
+  "port": 22,
+  "action": "DENY",
+  "category": "CRITICAL",
+  "ip_type": "Private Network"
+}
+```
+
+---
+
+## ⏱️ Time-to-Clarity Metric
+
+| Without Tool | With LogLens AI |
+| ------------ | --------------- |
+| 2–3 minutes  | < 10 seconds    |
+
+---
+
+## 🔐 Use Cases
+
+* SOC (Security Operations Center)
+* Incident response automation
+* Threat detection
+* SIEM enhancement
 
 ---
 
 ## 🔮 Future Scope
 
-* Real-time log monitoring
-* Chat-based interaction (“Explain this log”)
-* Integration with security tools
-* Advanced attack detection
+* ⚡ Real-time log streaming
+* 💬 Chat-based log analysis
+* 🌐 IP geolocation
+* 🤖 Advanced ML models
+* 🔗 Integration with tools like Splunk
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome!
+
+---
+
+## 📜 License
+
+MIT License
 
 ---
 ## 👥 Team
