@@ -2,6 +2,7 @@ import re
 import os
 from classifier import classify_logs
 from anomaly import detect_anomalies
+from datetime import datetime
 
 # Parse a single log
 def parse_log(log):
@@ -11,6 +12,7 @@ def parse_log(log):
     
     if match:
         return {
+            "timestamp": datetime.now(),  # temporary
             "source_ip": match.group(1),
             "port": int(match.group(2)),
             "action": match.group(3)

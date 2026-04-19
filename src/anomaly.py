@@ -23,7 +23,8 @@ def detect_anomalies(logs):
             anomalies.append({
                 "ip": ip,
                 "type": "Brute Force Attack",
-                "detail": "Multiple failed login attempts"
+                "detail": "Multiple failed attempts in short time"
+
             })
 
         if len(data["ports"]) >= 3:
