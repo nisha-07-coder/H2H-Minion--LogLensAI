@@ -85,9 +85,11 @@ st.markdown("""
 st.divider()
 
 # ------------------ LOAD DATA ------------------
+current_dir = os.path.dirname(__file__)
+base_dir = os.path.abspath(os.path.join(current_dir, ".."))
+
 file_path = os.path.join(base_dir, "data", "sample_logs.txt")
 
-logs = parse_file(file_path)
 
 # ------------------ PROCESS ------------------
 logs = enrich_logs(logs)
