@@ -256,6 +256,17 @@ Feel free to fork and submit pull requests.
 
 ---
 
+## 🌐 Deployed Link
+
+This project is NOT deployed on cloud platforms.
+
+The system runs locally using Streamlit:
+
+```bash
+streamlit run app.py
+
+---
+
 ## 📜 License
 
 MIT License
@@ -270,9 +281,3 @@ MIT License
 - Nikath Jahan  
 
 ---
-
-## ⭐ Show Your Support
-
-If you like this project:
-
-⭐ Star the repo  
