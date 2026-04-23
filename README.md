@@ -210,7 +210,6 @@ streamlit run app.py
 
 ---
 ## Screenshots
-<img width="1440" height="900" alt="Screenshot 2026-04-23 at 8 24 48 PM" src="https://github.com/user-attachments/assets/9bce0b7d-59d9-4449-8fef-a4c9820bcfff" />
 <img width="1440" height="900" alt="Screenshot 2026-04-23 at 8 25 20 PM" src="https://github.com/user-attachments/assets/5f322d12-0182-43c2-a73c-ec6a6550821e" />
 <img width="1440" height="900" alt="Screenshot 2026-04-23 at 8 25 13 PM" src="https://github.com/user-attachments/assets/e64ed42a-4392-4115-94e2-d621768969c8" />
 <img width="1440" height="900" alt="Screenshot 2026-04-23 at 8 25 03 PM" src="https://github.com/user-attachments/assets/cdb64337-fad0-4316-9424-fc6e829970e4" />
