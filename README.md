@@ -1,4 +1,4 @@
-<img width="1440" height="900" alt="Screenshot 2026-04-23 at 8 29 48 PM" src="https://github.com/user-attachments/assets/607333ee-aafc-4f5b-b3f0-5265862de7b3" />
+
 # 🚀 LogLens AI  
 ### 🧠 From Raw Logs to Smart Security Intelligence
 
