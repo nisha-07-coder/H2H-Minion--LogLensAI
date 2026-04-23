@@ -9,45 +9,54 @@
 </p>
 
 ---
+## ❗ Problem Statement  
+Modern systems generate massive volumes of raw logs (Syslog, SNMP traps, VPC Flow Logs). These logs are:
 
-## 📌 Overview
+- Unstructured and complex  
+- Hard to analyze manually  
+- Time-consuming during incidents  
 
-**LogLens AI** is an intelligent cybersecurity platform that transforms raw network logs into:
-
-- 📊 Structured data  
-- 🚨 Detected threats  
-- 🔗 Correlated incidents  
-- 🧠 Human-readable insights  
-
-It acts like a **virtual SOC analyst**, helping security teams understand threats faster and respond smarter.
+👉 This leads to delayed threat detection and slow incident response in SOC environments.
 
 ---
 
-## 🎯 Problem Statement
+#  💡 Proposed Solution  
+LogLens AI solves this problem by building an intelligent log analysis pipeline that:
 
-Modern systems generate huge volumes of logs that are:
+- Parses raw logs into structured data  
+- Detects anomalies and suspicious behavior  
+- Classifies log severity  
+- Correlates incidents  
+- Converts logs into human-readable insights  
 
-- ❌ Complex and unstructured  
-- ⏳ Time-consuming to analyze  
-- 🧠 Difficult to interpret  
-
-➡️ Result: **Delayed threat detection & slow incident response**
-
----
-
-## 💡 Solution
-
-LogLens AI simplifies log analysis by:
-
-- 🔍 Parsing raw logs  
-- 🚨 Detecting anomalies  
-- 🏷️ Classifying severity  
-- 🔗 Correlating incidents  
-- 🧠 Translating logs into plain English  
-- 💡 Providing actionable recommendations  
+👉 Acts as a virtual SOC analyst for faster decision-making.
 
 ---
 
+# 🧰 Tech Stack  
+
+- **Frontend:** Streamlit  
+- **Backend:** Python  
+- **Data Processing:** Pandas  
+- **Parsing:** Regex  
+- **AI Layer:** Rule-based + chatbot logic  
+- **Visualization:** Streamlit Charts  
+- **Language:** Python 3.11  
+
+---
+
+#  ⚙️ Features  
+
+- 🔍 Raw log parsing (Syslog-style logs)  
+- 🚨 Anomaly detection (Brute force, port scanning)  
+- 🏷️ Log classification (Critical / Warning / Info)  
+- 🔗 Incident correlation  
+- 🧠 SOC AI chatbot assistant  
+- 📊 Interactive dashboard  
+- 🔥 Threat scoring system  
+- 📈 Live log simulation  
+
+---
 ## 🧱 Architecture
 
 ```
@@ -70,13 +79,6 @@ Streamlit Dashboard
 
 ---
 
-## 🔥 Features
-
-### 🔍 Log Parsing
-- Extracts IP, Port, Action, Timestamp  
-- Converts raw logs → structured format  
-
----
 
 ### 🚨 Anomaly Detection
 Detects:
@@ -114,19 +116,6 @@ Transforms logs into human language:
 - Attack timeline  
 - Charts & analytics  
 - Chat-based assistant  
-
----
-
-## ⚙️ Tech Stack
-
-| Layer        | Technology |
-|-------------|------------|
-| Backend      | Python |
-| Data         | Pandas |
-| Parsing      | Regex |
-| UI           | Streamlit |
-| AI Layer     | Rule-based / LLM-ready |
-| ML (Optional)| Scikit-learn |
 
 ---
 
@@ -220,6 +209,13 @@ streamlit run app.py
 | Using LogLens AI    | < 10 sec |
 
 ---
+## Screenshots
+<img width="1440" height="900" alt="Screenshot 2026-04-23 at 8 24 48 PM" src="https://github.com/user-attachments/assets/9bce0b7d-59d9-4449-8fef-a4c9820bcfff" />
+<img width="1440" height="900" alt="Screenshot 2026-04-23 at 8 25 20 PM" src="https://github.com/user-attachments/assets/5f322d12-0182-43c2-a73c-ec6a6550821e" />
+<img width="1440" height="900" alt="Screenshot 2026-04-23 at 8 25 13 PM" src="https://github.com/user-attachments/assets/e64ed42a-4392-4115-94e2-d621768969c8" />
+<img width="1440" height="900" alt="Screenshot 2026-04-23 at 8 25 03 PM" src="https://github.com/user-attachments/assets/cdb64337-fad0-4316-9424-fc6e829970e4" />
+<img width="1440" height="900" alt="Screenshot 2026-04-23 at 8 24 55 PM" src="https://github.com/user-attachments/assets/540ec1e0-43e0-4e23-85a2-ebb6a65953d6" />
+<img width="1440" height="900" alt="Screenshot 2026-04-23 at 8 24 48 PM" src="https://github.com/user-attachments/assets/66b73a64-62f0-43cf-8e75-39d7b4db16aa" />
 
 ## 🔐 Use Cases
 
