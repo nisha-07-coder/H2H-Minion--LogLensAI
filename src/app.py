@@ -78,7 +78,7 @@ st.divider()
 # ------------------ LOAD DATA (FIXED) ------------------
 current_dir = os.path.dirname(__file__)
 base_dir = os.path.abspath(os.path.join(current_dir, ".."))
-file_path = os.path.join(base_dir, "data", "sample_logs.txt")
+file_path = os.path.join(base_dir, "Data", "sample_logs.txt")
 
 # ✅ IMPORTANT FIX: initialize logs safely
 logs = parse_file(file_path)
