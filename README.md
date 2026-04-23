@@ -261,11 +261,12 @@ Feel free to fork and submit pull requests.
 This project is NOT deployed on cloud platforms.
 
 The system runs locally using Streamlit:
-
-```bash
+```
 streamlit run app.py
 
+```
 ---
+
 
 ## 📜 License
 
